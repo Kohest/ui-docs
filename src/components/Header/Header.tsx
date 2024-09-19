@@ -7,8 +7,8 @@ import { useTheme } from "../../context/ThemeContext";
 const Header = () => {
   const [active, setActive] = useState(false);
   const theme = useTheme();
-  const handleClick = () => {
-    theme.change(theme.theme === "light" ? "dark" : "light");
+  const handleClick = (themeSet: string) => {
+    theme.change(themeSet);
     setActive(!active);
   };
   return (
@@ -126,8 +126,8 @@ const Header = () => {
             </button>
             {active && (
               <div className={styles.header__popover}>
-                <div onClick={handleClick}>Light</div>
-                <div onClick={handleClick}>Dark</div>
+                <div onClick={() => handleClick("light")}>Light</div>
+                <div onClick={() => handleClick("dark")}>Dark</div>
               </div>
             )}
           </nav>

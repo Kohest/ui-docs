@@ -33,6 +33,7 @@ function App() {
   return (
     <Suspense fallback={<MainLayout />}>
       <Routes>
+        <Route path="/" element={<Navigate to="/docs" />} />
         <Route path="/" element={<MainLayout />}>
           <Route path="docs" element={<DocumentsLayout />}>
             <Route path="" element={<DocsPage />} />
