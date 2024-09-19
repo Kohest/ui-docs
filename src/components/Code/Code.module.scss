@@ -1,0 +1,46 @@
+.code {
+    display: grid;
+    min-width: 100%;
+    overflow-wrap: break-word;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 16px;
+    width: 100%;
+    padding: 2px 16px;
+    color: white;
+}
+
+.code_wrapper {
+    position: relative;
+}
+
+pre {
+    margin-bottom: 16px;
+    margin-top: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-height: 650px;
+    overflow-x: auto hidden;
+    border-radius: 8px;
+    background: 1px solid hsl(240 3.7% 15.9%);
+    background-color: rgb(24, 24, 27);
+}
+
+.copy {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    cursor: pointer;
+    background: transparent;
+
+    &:hover {
+        background: hsla(0, 0%, 92%, 0.205);
+        border-radius: 5px;
+    }
+}

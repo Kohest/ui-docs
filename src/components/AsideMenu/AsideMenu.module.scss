@@ -1,0 +1,27 @@
+.aside_wrapper {
+    position: sticky;
+    height: calc(100vh - 56px);
+    margin-left: -8px;
+    top: 56px;
+    width: 100%;
+}
+
+.aside {
+    position: fixed;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 24px;
+    height: 100%;
+
+}
+
+.aside__content {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    div {
+        padding-bottom: 16px;
+    }
+
+}

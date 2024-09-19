@@ -1,0 +1,29 @@
+.home__this_page {
+    position: sticky;
+    height: fit-content;
+    top: 64px;
+    margin-left: 20px;
+}
+
+.this_page__title {
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+}
+
+.this_page__list {
+    li {
+        padding-top: 10px;
+        font-weight: 400;
+        color: #8a8a8a;
+        transition-duration: 200ms;
+
+        &:hover {
+            color: var(--theme-default-font);
+            cursor: pointer;
+        }
+    }
+}
+
+.this_page__list li.active a {
+    color: var(--theme-default-font);
+}

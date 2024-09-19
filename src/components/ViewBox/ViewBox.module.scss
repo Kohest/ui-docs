@@ -1,0 +1,61 @@
+.viewBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.viewBox_options {
+    margin-top: 16px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options_wrapper {
+    border-bottom: 1px solid var(--theme-default-border);
+    display: inline-flex;
+    width: 100%;
+    height: 36px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.viewBox_content_wrapper {
+    border: 1px solid var(--theme-default-border);
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.viewBox_content {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 350px;
+}
+
+.options_button {
+    font-size: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: transparent;
+    color: hsl(240 5% 64.9%);
+}
+
+.option_active {
+    border-bottom: 2px solid var(--theme-default-font);
+    color: var(--theme-default-font);
+    font-weight: 500;
+    padding-top: 2px;
+}
+
+.viewBox_name {
+    letter-spacing: -0.3px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 32px;
+}

@@ -1,0 +1,16 @@
+.link_button {
+    padding: 8px 16px 8px 16px;
+    background-color: var(--theme-default-bg);
+    border: 1px solid var(--theme-default-border);
+    display: inline-flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transition-duration: 200ms;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+
+    &:hover {
+        background: var(--theme-default-border);
+    }
+}

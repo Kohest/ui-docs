@@ -1,0 +1,123 @@
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: hsl(var(240 10% 3.9%) / .6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 10;
+}
+
+.header_container {
+    width: 1536px;
+    align-items: center;
+    display: flex;
+    height: 56px;
+    margin: auto;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.header__menu_wrapper {
+    display: flex;
+    color: white;
+
+    nav {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+
+        a {
+            color: #8a8a8b;
+            transition-duration: 200ms;
+        }
+
+        a:hover {
+            color: var(--theme-default-font);
+        }
+    }
+}
+
+.header__main_link {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+
+    span {
+        color: var(--theme-default-font);
+        margin-left: 8px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.header__social_wrapper {
+    display: flex;
+    flex: 1 1 0%;
+    align-items: center;
+    justify-content: flex-end;
+
+    nav {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+}
+
+.social_icon__wrapper {
+    display: inline-flex;
+    height: 38px;
+    width: 38px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    transition-duration: 200ms;
+
+    &:hover {
+        background-color: #ffffff31;
+    }
+}
+
+.theme_button {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    background: transparent;
+    transition-duration: 200ms;
+
+    &:hover {
+        background-color: #ffffff31;
+    }
+}
+
+.header__popover {
+    position: absolute;
+    background-color: var(--theme-default-bg);
+    border: 1px solid var(--theme-default-border);
+    border-radius: 4px;
+    right: 0;
+    top: 40px;
+    font-size: 14px;
+    height: 80px;
+    width: 104px;
+    z-index: 2;
+
+    div {
+        cursor: pointer;
+        color: var(--theme-default-font);
+        padding: 12px 24px 13px 12px;
+        transition-duration: 200ms;
+
+        &:hover {
+            background: var(--theme-default-border);
+        }
+    }
+}
